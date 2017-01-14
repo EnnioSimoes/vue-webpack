@@ -19,6 +19,8 @@ module.exports = {
             // the "scss" and "sass" values for the lang attribute to the right configs here.
             // other preprocessors should work out of the box, no loader config like this nessessary.
             'scss': 'vue-style-loader!css-loader!sass-loader',
+            'css': 'vue-style-loader!css-loader',
+            'stylus': 'vue-style-loader!css-loader!stylus-loader',
             'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
           }
           // other vue-loader options go here
@@ -32,6 +34,13 @@ module.exports = {
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]'
+        }
+    },
+      {
+        test: /\.css$/,
+        loader: 'css-loader',
         options: {
           name: '[name].[ext]?[hash]'
         }

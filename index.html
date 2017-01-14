@@ -36,31 +36,131 @@
                     <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
                 </p>
                 <h1>Componentes VueJs com webpack</h1>
-                <div class="row">
+                <!-- COMPONENT StarCount -->
+                <div id="StarCount" class="row">
                     <div class="col-xs-12 col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3>Nome do componente</h3> <br>
+                                <h3>* StarCount</h3> <br>
                             </div>
                             <div class="panel-body">
-                                <exemplo></exemplo>
+                                <div class="row">
+                                    <div class="col-md-1 col-md-offset-5">
+                                            <star-count postid="1" postlike="100"></star-count>
+                                            <br>
+                                            <br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <pre><</>star-count postid="1" postlike="100"><</>/star-count></pre>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Dependências:</p>
+                                        <ul>
+                                            <li>stylus</li>
+                                            <li>stylus-loader</li>
+                                            <li>css-loader</li>
+                                            <li>babel-loader</li>
+                                            <li>animate.css</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="panel-footer">
-                                <p class="text-right">by <a href="#">Fulano</a></p>
+                                <p class="text-right">by <a href="#">Ennio Simões</a></p>
                             </div>
                         </div>
-                    </div><!--/.col-xs-12.col-lg-12-->
-                </div><!--/row-->
-            </div><!--/.col-xs-12.col-sm-9-->
+                    </div>
+                </div>
+                <!-- COMPONENT ViewCount -->
+                <div id="ViewCount" class="row">
+                    <div class="col-xs-12 col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3>* ViewCount</h3> <br>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-1 col-md-offset-5">
+                                            <view-count postviews="100"></view-count>
+                                            <br>
+                                            <br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <pre><</>view-count postviews="100"><</>/view-count></pre>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Dependências:</p>
+                                        <ul>
+                                            <li>stylus</li>
+                                            <li>stylus-loader</li>
+                                            <li>css-loader</li>
+                                            <li>babel-loader</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="panel-footer">
+                                <p class="text-right">by <a href="#">Ennio Simões</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- COMPONENT InputSearch -->
+                <div id="InputSearch" class="row">
+                    <div class="col-xs-12 col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3>* InputSearch</h3> <br>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-1 col-md-offset-7">
+                                            <input-search></input-search>
+                                            <br>
+                                            <br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <pre><</>input-search><</>/input-search></pre>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Dependências:</p>
+                                        <ul>
+                                            <li>stylus</li>
+                                            <li>stylus-loader</li>
+                                            <li>css-loader</li>
+                                            <li>babel-loader</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="panel-footer">
+                                <p class="text-right">by <a href="#">Ennio Simões</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
                 <div class="list-group">
-                    <a href="#" class="list-group-item active">Link</a>
-                    <a href="#" class="list-group-item">Link</a>
-                    <a href="#" class="list-group-item">Link</a>
-                    <a href="#" class="list-group-item">Link</a>
-                    <a href="#" class="list-group-item">Link</a>
-                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#StarCount" class="list-group-item active">StarCount</a>
+                    <a href="#ViewCount" class="list-group-item">ViewCount</a>
+                    <a href="#InputSearch" class="list-group-item">InputSearch</a>
                     <a href="#" class="list-group-item">Link</a>
                     <a href="#" class="list-group-item">Link</a>
                     <a href="#" class="list-group-item">Link</a>
